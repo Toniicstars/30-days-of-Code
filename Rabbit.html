@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>iRock - The Virtual Pet Rabbit</title>
+    <script type="text/javascript">
+        function touchRabbit() {
+        var userName = prompt("What is your name?", "Enter your name here.");
+
+        if (userName) {
+            alert("It is good to meet you, " + userName + ".");
+            document.getElementById("rabbitImg").src = "rabbit.jpg";
+        }
+    }
+    </script>
+</head>
+
+<body onload="alert('Hello, I am your pet Rabbit');">
+    <div style="margin-top: 100px; text-align:center">
+        <img id="rabbitImg" src="rabbit.jpg" alt="Rabbit" style="cursor:pointer" onclick="touchRabbit();" />
+    </div>
+</body>
+
+</html>
